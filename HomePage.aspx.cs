@@ -30,16 +30,16 @@ namespace SITConnect_204048X
                     success_label.Text = "You are logged in with " + email_label.Text + ".";
                     success_label.ForeColor = System.Drawing.Color.AliceBlue;
                     logout_button.Visible = true;
-                    error_label.Text = "Session ID from session is " + Session.SessionID.ToString() + " and Session ID from cookie is " + Request.Cookies["ASP.NET_SessionId"].Value.ToString();
+                    //error_label.Text = "Session ID from session is " + Session.SessionID.ToString() + " and Session ID from cookie is " + Request.Cookies["ASP.NET_SessionId"].Value.ToString();
 
-                    if (Session.SessionID != Session["RegistrationID"])
-                    {
-                        session_label.Text = "Not the same. Session ID is " + Session.SessionID.ToString() + " and registration ID is " + Session["RegistrationID"];
-                    }
-                    else
-                    {
-                        session_label.Text = "Session ID from session is " + Session.SessionID.ToString() + " and registration ID is " + Session["RegistrationID"];
-                    }
+                    //if (Session.SessionID != Session["RegistrationID"])
+                    //{
+                    //    session_label.Text = "Not the same. Session ID is " + Session.SessionID.ToString() + " and registration ID is " + Session["RegistrationID"];
+                    //}
+                    //else
+                    //{
+                    //    session_label.Text = "Session ID from session is " + Session.SessionID.ToString() + " and registration ID is " + Session["RegistrationID"];
+                    //}
 
                 }
                 
