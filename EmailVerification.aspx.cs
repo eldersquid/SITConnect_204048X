@@ -43,7 +43,7 @@ namespace SITConnect_204048X
                         {
                             error_twofac.Text = "Verification code expired. Sending a new one.";
                             
-                            sendEmail(Session["Email"].ToString(),createVerificationCode());
+                            //sendEmail(Session["Email"].ToString(),createVerificationCode());
                         }
                     }
                     else
